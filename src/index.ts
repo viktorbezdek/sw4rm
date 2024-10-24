@@ -2,7 +2,7 @@
  * Main entry point for the Swarm TypeScript library.
  * Exports all public interfaces, types, and classes.
  *
- * @module swarm-ts
+ * @module @swarm/core
  */
 
 // Core functionality

@@ -1,7 +1,7 @@
 {
-  "name": "swarm-ts",
+  "name": "@swarm/core",
   "version": "0.1.0",
-  "description": "TypeScript implementation of the Swarm framework",
+  "description": "TypeScript AI Agent collaboration inspired by OpenAI/Swarm",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": {
@@ -62,10 +62,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/viktorbezdek/swarm-ts.git"
+    "url": "https://github.com/viktorbezdek/@swarm/core.git"
   },
   "bugs": {
-    "url": "https://github.com/viktorbezdek/swarm-ts/issues"
+    "url": "https://github.com/viktorbezdek/@swarm/core/issues"
   },
   "license": "MIT"
 }
