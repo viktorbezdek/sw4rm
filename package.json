@@ -1,5 +1,5 @@
 {
-  "name": "swarm-ts",
+  "name": "the-horde",
   "version": "0.1.0",
   "description": "TypeScript implementation of the Swarm framework",
   "main": "dist/index.js",
