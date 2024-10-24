@@ -26,13 +26,7 @@ Inspired by [openai/swarm](https://github.com/openai/swarm).
 You can install the package using npm:
 
 ```bash
-npm install
-```
-
-Or using Bun:
-
-```bash
-bun install
+npm install swarm-ts
 ```
 
 ## Quick Start
@@ -40,7 +34,7 @@ bun install
 1. Create an agent with tools:
 
 ```typescript
-import { Agent } from './src/types';
+import { Agent } from 'swarm-ts/types';
 
 const myAgent: Agent = {
   name: 'MyAssistant',
@@ -58,7 +52,7 @@ const myAgent: Agent = {
 2. Initialize and run the Swarm system:
 
 ```typescript
-import { Swarm } from './src/core';
+import { Swarm } from 'swarm-ts/core';
 
 const swarm = new Swarm();
 const result = await swarm.run(
@@ -72,7 +66,7 @@ const result = await swarm.run(
 3. Use the CLI interface:
 
 ```typescript
-import { CLI } from './src/cli';
+import { CLI } from 'swarm-ts/cli';
 
 const cli = new CLI({
   agent: myAgent,
