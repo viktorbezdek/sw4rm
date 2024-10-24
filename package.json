@@ -1,0 +1,71 @@
+{
+  "name": "swarm-ts",
+  "version": "0.1.0",
+  "description": "TypeScript implementation of the Swarm framework",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": {
+    "name": "Viktor Bezdek",
+    "email": "viktor.bezdek@gmail.com"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "start:example": "ts-node examples/index.ts",
+    "dev": "ts-node-dev --respawn examples/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint 'src/**/*.ts' 'examples/**/*.ts'",
+    "lint:fix": "eslint 'src/**/*.ts' 'examples/**/*.ts' --fix",
+    "format": "prettier --write 'src/**/*.ts' 'examples/**/*.ts'",
+    "clean": "rimraf dist coverage",
+    "prepare": "npm run clean && npm run build"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "ai",
+    "typescript",
+    "openai",
+    "tools",
+    "agents"
+  ],
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "mathjs": "^13.2.0",
+    "openai": "^4.68.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.7.9",
+    "@typescript-eslint/eslint-plugin": "^8.11.0",
+    "@typescript-eslint/parser": "^8.11.0",
+    "bun": "^1.1.33",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jest": "^28.8.3",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/viktorbezdek/swarm-ts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/viktorbezdek/swarm-ts/issues"
+  },
+  "license": "MIT"
+}
