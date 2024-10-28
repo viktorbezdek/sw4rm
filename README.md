@@ -26,7 +26,7 @@ Inspired by [openai/swarm](https://github.com/openai/swarm).
 You can install the package using npm:
 
 ```bash
-npm install @swarm/core
+npm install sw4rm
 ```
 
 ## Quick Start
@@ -34,7 +34,7 @@ npm install @swarm/core
 1. Create an agent with tools:
 
 ```typescript
-import { Agent } from '@swarm/core/types';
+import { Agent } from 'sw4rm/types';
 
 const myAgent: Agent = {
   name: 'MyAssistant',
@@ -52,7 +52,7 @@ const myAgent: Agent = {
 2. Initialize and run the Swarm system:
 
 ```typescript
-import { Swarm } from '@swarm/core/core';
+import { Swarm } from 'sw4rm/core';
 
 const swarm = new Swarm();
 const result = await swarm.run(
@@ -66,7 +66,7 @@ const result = await swarm.run(
 3. Use the CLI interface:
 
 ```typescript
-import { CLI } from '@swarm/core/cli';
+import { CLI } from 'sw4rm/cli';
 
 const cli = new CLI({
   agent: myAgent,
@@ -94,7 +94,7 @@ npm run start:example
 ## Project Structure
 
 ```
-@swarm/core/
+sw4rm/
 ├── src/
 │   ├── core.ts      # Core Swarm implementation
 │   ├── cli.ts       # CLI interface

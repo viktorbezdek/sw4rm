@@ -1,5 +1,6 @@
 {
-  "name": "@swarm/core",
+  "name": "sw4rm",
+  "private": false,
   "version": "0.1.0",
   "description": "TypeScript AI Agent collaboration inspired by OpenAI/Swarm",
   "main": "dist/index.js",
@@ -62,10 +63,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/viktorbezdek/@swarm/core.git"
+    "url": "https://github.com/viktorbezdek/sw4rm.git"
   },
   "bugs": {
-    "url": "https://github.com/viktorbezdek/@swarm/core/issues"
+    "url": "https://github.com/viktorbezdek/sw4rm/issues"
   },
   "license": "MIT"
 }
